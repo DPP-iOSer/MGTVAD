@@ -1,0 +1,807 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64DC78B0233212C900E3AB05 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 64DC78AF233212C900E3AB05 /* MDConfig.plist */; };
+		64DC78BA233212C900E3AB05 /* libMGTVREDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 64DC78B9233212C900E3AB05 /* libMGTVREDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		64DC78BF233212C900E3AB05 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC78BE233212C900E3AB05 /* JavaScriptCore.framework */; };
+		64DC78C1233212C900E3AB05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC78C0233212C900E3AB05 /* Foundation.framework */; };
+		64DC78C3233212C900E3AB05 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64DC78C2233212C900E3AB05 /* UIKit.framework */; };
+		64DC78C8233212C900E3AB05 /* MGTVREDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78C7233212C900E3AB05 /* MGTVREDylib.mm */; };
+		64DC78CB233212C900E3AB05 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78CA233212C900E3AB05 /* MDConfigManager.h */; };
+		64DC78CD233212C900E3AB05 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78CC233212C900E3AB05 /* MDConfigManager.m */; };
+		64DC78CF233212C900E3AB05 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78CE233212C900E3AB05 /* MDCycriptManager.h */; };
+		64DC78D1233212C900E3AB05 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78D0233212C900E3AB05 /* MDCycriptManager.m */; };
+		64DC78D3233212C900E3AB05 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78D2233212C900E3AB05 /* MDMethodTrace.h */; };
+		64DC78D5233212C900E3AB05 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78D4233212C900E3AB05 /* MDMethodTrace.m */; };
+		64DC78D8233212C900E3AB05 /* a1a2-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78D7233212C900E3AB05 /* a1a2-selectortramps-arm.s */; };
+		64DC78DA233212C900E3AB05 /* a1a2-selectortramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78D9233212C900E3AB05 /* a1a2-selectortramps-arm64.s */; };
+		64DC78DC233212C900E3AB05 /* a1a2-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78DB233212C900E3AB05 /* a1a2-selectortramps-i386.s */; };
+		64DC78DE233212C900E3AB05 /* a1a2-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78DD233212C900E3AB05 /* a1a2-selectortramps-x86_64.s */; };
+		64DC78E0233212C900E3AB05 /* a2a3-selectortramps-arm.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78DF233212C900E3AB05 /* a2a3-selectortramps-arm.s */; };
+		64DC78E2233212C900E3AB05 /* a2a3-selectortramps-i386.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78E1233212C900E3AB05 /* a2a3-selectortramps-i386.s */; };
+		64DC78E4233212C900E3AB05 /* a2a3-selectortramps-x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78E3233212C900E3AB05 /* a2a3-selectortramps-x86_64.s */; };
+		64DC78E6233212C900E3AB05 /* OCMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78E5233212C900E3AB05 /* OCMethodTrace.h */; };
+		64DC78E8233212C900E3AB05 /* OCMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78E7233212C900E3AB05 /* OCMethodTrace.m */; };
+		64DC78EA233212C900E3AB05 /* OCSelectorTrampolines.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78E9233212C900E3AB05 /* OCSelectorTrampolines.h */; };
+		64DC78EC233212C900E3AB05 /* OCSelectorTrampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78EB233212C900E3AB05 /* OCSelectorTrampolines.mm */; };
+		64DC78F0233212C900E3AB05 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78EF233212C900E3AB05 /* LLDBTools.h */; };
+		64DC78F2233212C900E3AB05 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78F1233212C900E3AB05 /* LLDBTools.mm */; };
+		64DC78F7233212C900E3AB05 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78F6233212C900E3AB05 /* AntiAntiDebug.m */; };
+		64DC78FA233212C900E3AB05 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78F9233212C900E3AB05 /* fishhook.c */; };
+		64DC78FC233212C900E3AB05 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78FB233212C900E3AB05 /* fishhook.h */; };
+		64DC78FE233212C900E3AB05 /* MGTVREDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DC78FD233212C900E3AB05 /* MGTVREDylib.h */; };
+		64DC7900233212C900E3AB05 /* MGTVREDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DC78FF233212C900E3AB05 /* MGTVREDylib.m */; };
+		64DC790A2332131600E3AB05 /* MGTV-iPhone-appstore.app in Resources */ = {isa = PBXBuildFile; fileRef = 64DC79092332131600E3AB05 /* MGTV-iPhone-appstore.app */; };
+		64DFC19C23336230000157E4 /* SkipAdManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DFC19A23336230000157E4 /* SkipAdManager.h */; };
+		64DFC19D23336230000157E4 /* SkipAdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DFC19B23336230000157E4 /* SkipAdManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64DC78BB233212C900E3AB05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64DC789D233212C900E3AB05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64DC78B8233212C900E3AB05;
+			remoteInfo = MGTVREDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		64DC78A5233212C900E3AB05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				64DC78BA233212C900E3AB05 /* libMGTVREDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		64DC78A8233212C900E3AB05 /* MGTVRE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGTVRE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DC78AB233212C900E3AB05 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		64DC78AD233212C900E3AB05 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		64DC78AF233212C900E3AB05 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		64DC78B2233212C900E3AB05 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		64DC78B3233212C900E3AB05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64DC78B9233212C900E3AB05 /* libMGTVREDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libMGTVREDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		64DC78BE233212C900E3AB05 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		64DC78C0233212C900E3AB05 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		64DC78C2233212C900E3AB05 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		64DC78C6233212C900E3AB05 /* MGTVREDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = MGTVREDylib.xm; path = Logos/MGTVREDylib.xm; sourceTree = "<group>"; };
+		64DC78C7233212C900E3AB05 /* MGTVREDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = MGTVREDylib.mm; path = Logos/MGTVREDylib.mm; sourceTree = "<group>"; };
+		64DC78CA233212C900E3AB05 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		64DC78CC233212C900E3AB05 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		64DC78CE233212C900E3AB05 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		64DC78D0233212C900E3AB05 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		64DC78D2233212C900E3AB05 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		64DC78D4233212C900E3AB05 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		64DC78D7233212C900E3AB05 /* a1a2-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm.s"; path = "Trace/a1a2-selectortramps-arm.s"; sourceTree = "<group>"; };
+		64DC78D9233212C900E3AB05 /* a1a2-selectortramps-arm64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-arm64.s"; path = "Trace/a1a2-selectortramps-arm64.s"; sourceTree = "<group>"; };
+		64DC78DB233212C900E3AB05 /* a1a2-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-i386.s"; path = "Trace/a1a2-selectortramps-i386.s"; sourceTree = "<group>"; };
+		64DC78DD233212C900E3AB05 /* a1a2-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a1a2-selectortramps-x86_64.s"; path = "Trace/a1a2-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		64DC78DF233212C900E3AB05 /* a2a3-selectortramps-arm.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-arm.s"; path = "Trace/a2a3-selectortramps-arm.s"; sourceTree = "<group>"; };
+		64DC78E1233212C900E3AB05 /* a2a3-selectortramps-i386.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-i386.s"; path = "Trace/a2a3-selectortramps-i386.s"; sourceTree = "<group>"; };
+		64DC78E3233212C900E3AB05 /* a2a3-selectortramps-x86_64.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "a2a3-selectortramps-x86_64.s"; path = "Trace/a2a3-selectortramps-x86_64.s"; sourceTree = "<group>"; };
+		64DC78E5233212C900E3AB05 /* OCMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCMethodTrace.h; path = Trace/OCMethodTrace.h; sourceTree = "<group>"; };
+		64DC78E7233212C900E3AB05 /* OCMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OCMethodTrace.m; path = Trace/OCMethodTrace.m; sourceTree = "<group>"; };
+		64DC78E9233212C900E3AB05 /* OCSelectorTrampolines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OCSelectorTrampolines.h; path = Trace/OCSelectorTrampolines.h; sourceTree = "<group>"; };
+		64DC78EB233212C900E3AB05 /* OCSelectorTrampolines.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = OCSelectorTrampolines.mm; path = Trace/OCSelectorTrampolines.mm; sourceTree = "<group>"; };
+		64DC78ED233212C900E3AB05 /* selectortramps.mac */ = {isa = PBXFileReference; lastKnownFileType = text; name = selectortramps.mac; path = Trace/selectortramps.mac; sourceTree = "<group>"; };
+		64DC78EF233212C900E3AB05 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		64DC78F1233212C900E3AB05 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		64DC78F4233212C900E3AB05 /* MGTVREDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGTVREDylib-Prefix.pch"; sourceTree = "<group>"; };
+		64DC78F6233212C900E3AB05 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		64DC78F9233212C900E3AB05 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		64DC78FB233212C900E3AB05 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		64DC78FD233212C900E3AB05 /* MGTVREDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGTVREDylib.h; sourceTree = "<group>"; };
+		64DC78FF233212C900E3AB05 /* MGTVREDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGTVREDylib.m; sourceTree = "<group>"; };
+		64DC79092332131600E3AB05 /* MGTV-iPhone-appstore.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = "MGTV-iPhone-appstore.app"; path = "TargetApp/MGTV-iPhone-appstore.app"; sourceTree = "<group>"; };
+		64DFC19A23336230000157E4 /* SkipAdManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SkipAdManager.h; sourceTree = "<group>"; };
+		64DFC19B23336230000157E4 /* SkipAdManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkipAdManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64DC78A2233212C900E3AB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DC78B6233212C900E3AB05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC78BF233212C900E3AB05 /* JavaScriptCore.framework in Frameworks */,
+				64DC78C3233212C900E3AB05 /* UIKit.framework in Frameworks */,
+				64DC78C1233212C900E3AB05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64DC789C233212C900E3AB05 = {
+			isa = PBXGroup;
+			children = (
+				64DC78AA233212C900E3AB05 /* MGTVRE */,
+				64DC78C4233212C900E3AB05 /* MGTVREDylib */,
+				64DC78BD233212C900E3AB05 /* Frameworks */,
+				64DC78A9233212C900E3AB05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64DC78A9233212C900E3AB05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78A8233212C900E3AB05 /* MGTVRE.app */,
+				64DC78B9233212C900E3AB05 /* libMGTVREDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64DC78AA233212C900E3AB05 /* MGTVRE */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78AB233212C900E3AB05 /* icon.png */,
+				64DC78B3233212C900E3AB05 /* Info.plist */,
+				64DC78AC233212C900E3AB05 /* Scripts */,
+				64DC78AE233212C900E3AB05 /* Config */,
+				64DC78B1233212C900E3AB05 /* TargetApp */,
+			);
+			path = MGTVRE;
+			sourceTree = "<group>";
+		};
+		64DC78AC233212C900E3AB05 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78AD233212C900E3AB05 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		64DC78AE233212C900E3AB05 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78AF233212C900E3AB05 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		64DC78B1233212C900E3AB05 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				64DC79092332131600E3AB05 /* MGTV-iPhone-appstore.app */,
+				64DC78B2233212C900E3AB05 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		64DC78BD233212C900E3AB05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78BE233212C900E3AB05 /* JavaScriptCore.framework */,
+				64DC78C0233212C900E3AB05 /* Foundation.framework */,
+				64DC78C2233212C900E3AB05 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64DC78C4233212C900E3AB05 /* MGTVREDylib */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78FD233212C900E3AB05 /* MGTVREDylib.h */,
+				64DC78FF233212C900E3AB05 /* MGTVREDylib.m */,
+				64DC78C5233212C900E3AB05 /* Logos */,
+				64DC78C9233212C900E3AB05 /* Config */,
+				64DC78D6233212C900E3AB05 /* Trace */,
+				64DC78EE233212C900E3AB05 /* Tools */,
+				64DC78F5233212C900E3AB05 /* AntiAntiDebug */,
+				64DC78F8233212C900E3AB05 /* fishhook */,
+				64DC78F3233212C900E3AB05 /* Supporting Files */,
+				64DFC19A23336230000157E4 /* SkipAdManager.h */,
+				64DFC19B23336230000157E4 /* SkipAdManager.m */,
+			);
+			path = MGTVREDylib;
+			sourceTree = "<group>";
+		};
+		64DC78C5233212C900E3AB05 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78C6233212C900E3AB05 /* MGTVREDylib.xm */,
+				64DC78C7233212C900E3AB05 /* MGTVREDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		64DC78C9233212C900E3AB05 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78CA233212C900E3AB05 /* MDConfigManager.h */,
+				64DC78CC233212C900E3AB05 /* MDConfigManager.m */,
+				64DC78CE233212C900E3AB05 /* MDCycriptManager.h */,
+				64DC78D0233212C900E3AB05 /* MDCycriptManager.m */,
+				64DC78D2233212C900E3AB05 /* MDMethodTrace.h */,
+				64DC78D4233212C900E3AB05 /* MDMethodTrace.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		64DC78D6233212C900E3AB05 /* Trace */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78D7233212C900E3AB05 /* a1a2-selectortramps-arm.s */,
+				64DC78D9233212C900E3AB05 /* a1a2-selectortramps-arm64.s */,
+				64DC78DB233212C900E3AB05 /* a1a2-selectortramps-i386.s */,
+				64DC78DD233212C900E3AB05 /* a1a2-selectortramps-x86_64.s */,
+				64DC78DF233212C900E3AB05 /* a2a3-selectortramps-arm.s */,
+				64DC78E1233212C900E3AB05 /* a2a3-selectortramps-i386.s */,
+				64DC78E3233212C900E3AB05 /* a2a3-selectortramps-x86_64.s */,
+				64DC78E5233212C900E3AB05 /* OCMethodTrace.h */,
+				64DC78E7233212C900E3AB05 /* OCMethodTrace.m */,
+				64DC78E9233212C900E3AB05 /* OCSelectorTrampolines.h */,
+				64DC78EB233212C900E3AB05 /* OCSelectorTrampolines.mm */,
+				64DC78ED233212C900E3AB05 /* selectortramps.mac */,
+			);
+			name = Trace;
+			sourceTree = "<group>";
+		};
+		64DC78EE233212C900E3AB05 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78EF233212C900E3AB05 /* LLDBTools.h */,
+				64DC78F1233212C900E3AB05 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		64DC78F3233212C900E3AB05 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78F4233212C900E3AB05 /* MGTVREDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		64DC78F5233212C900E3AB05 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78F6233212C900E3AB05 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		64DC78F8233212C900E3AB05 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				64DC78F9233212C900E3AB05 /* fishhook.c */,
+				64DC78FB233212C900E3AB05 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		64DC78B7233212C900E3AB05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC78CF233212C900E3AB05 /* MDCycriptManager.h in Headers */,
+				64DC78D3233212C900E3AB05 /* MDMethodTrace.h in Headers */,
+				64DC78FC233212C900E3AB05 /* fishhook.h in Headers */,
+				64DC78F0233212C900E3AB05 /* LLDBTools.h in Headers */,
+				64DC78FE233212C900E3AB05 /* MGTVREDylib.h in Headers */,
+				64DC78CB233212C900E3AB05 /* MDConfigManager.h in Headers */,
+				64DC78EA233212C900E3AB05 /* OCSelectorTrampolines.h in Headers */,
+				64DC78E6233212C900E3AB05 /* OCMethodTrace.h in Headers */,
+				64DFC19C23336230000157E4 /* SkipAdManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		64DC78A7233212C900E3AB05 /* MGTVRE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DC7906233212C900E3AB05 /* Build configuration list for PBXNativeTarget "MGTVRE" */;
+			buildPhases = (
+				64DC78A1233212C900E3AB05 /* Sources */,
+				64DC78A2233212C900E3AB05 /* Frameworks */,
+				64DC78A3233212C900E3AB05 /* ShellScript */,
+				64DC78A4233212C900E3AB05 /* Resources */,
+				64DC78A5233212C900E3AB05 /* CopyFiles */,
+				64DC78A6233212C900E3AB05 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64DC78BC233212C900E3AB05 /* PBXTargetDependency */,
+			);
+			name = MGTVRE;
+			productName = MGTVRE;
+			productReference = 64DC78A8233212C900E3AB05 /* MGTVRE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64DC78B8233212C900E3AB05 /* MGTVREDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64DC7903233212C900E3AB05 /* Build configuration list for PBXNativeTarget "MGTVREDylib" */;
+			buildPhases = (
+				64DC78B4233212C900E3AB05 /* ShellScript */,
+				64DC78B5233212C900E3AB05 /* Sources */,
+				64DC78B6233212C900E3AB05 /* Frameworks */,
+				64DC78B7233212C900E3AB05 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MGTVREDylib;
+			productName = MGTVREDylib;
+			productReference = 64DC78B9233212C900E3AB05 /* libMGTVREDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64DC789D233212C900E3AB05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = meitu;
+				TargetAttributes = {
+					64DC78A7233212C900E3AB05 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					64DC78B8233212C900E3AB05 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 64DC78A0233212C900E3AB05 /* Build configuration list for PBXProject "MGTVRE" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 64DC789C233212C900E3AB05;
+			productRefGroup = 64DC78A9233212C900E3AB05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64DC78A7233212C900E3AB05 /* MGTVRE */,
+				64DC78B8233212C900E3AB05 /* MGTVREDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64DC78A4233212C900E3AB05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC790A2332131600E3AB05 /* MGTV-iPhone-appstore.app in Resources */,
+				64DC78B0233212C900E3AB05 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64DC78A3233212C900E3AB05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh\n";
+		};
+		64DC78A6233212C900E3AB05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		64DC78B4233212C900E3AB05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64DC78A1233212C900E3AB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DC78B5233212C900E3AB05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64DC78D1233212C900E3AB05 /* MDCycriptManager.m in Sources */,
+				64DC78DA233212C900E3AB05 /* a1a2-selectortramps-arm64.s in Sources */,
+				64DC78D8233212C900E3AB05 /* a1a2-selectortramps-arm.s in Sources */,
+				64DC78DE233212C900E3AB05 /* a1a2-selectortramps-x86_64.s in Sources */,
+				64DC78E8233212C900E3AB05 /* OCMethodTrace.m in Sources */,
+				64DC7900233212C900E3AB05 /* MGTVREDylib.m in Sources */,
+				64DC78CD233212C900E3AB05 /* MDConfigManager.m in Sources */,
+				64DC78FA233212C900E3AB05 /* fishhook.c in Sources */,
+				64DC78F7233212C900E3AB05 /* AntiAntiDebug.m in Sources */,
+				64DC78EC233212C900E3AB05 /* OCSelectorTrampolines.mm in Sources */,
+				64DC78DC233212C900E3AB05 /* a1a2-selectortramps-i386.s in Sources */,
+				64DC78E2233212C900E3AB05 /* a2a3-selectortramps-i386.s in Sources */,
+				64DC78E0233212C900E3AB05 /* a2a3-selectortramps-arm.s in Sources */,
+				64DC78C8233212C900E3AB05 /* MGTVREDylib.mm in Sources */,
+				64DC78F2233212C900E3AB05 /* LLDBTools.mm in Sources */,
+				64DC78E4233212C900E3AB05 /* a2a3-selectortramps-x86_64.s in Sources */,
+				64DC78D5233212C900E3AB05 /* MDMethodTrace.m in Sources */,
+				64DFC19D23336230000157E4 /* SkipAdManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64DC78BC233212C900E3AB05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64DC78B8233212C900E3AB05 /* MGTVREDylib */;
+			targetProxy = 64DC78BB233212C900E3AB05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		64DC7901233212C900E3AB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		64DC7902233212C900E3AB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64DC7904233212C900E3AB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = U24BK4467G;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGTVREDylib/MGTVREDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMGTVREDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MGTVREDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		64DC7905233212C900E3AB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MGTVREDylib/MGTVREDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libMGTVREDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"MGTVREDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64DC7907233212C900E3AB05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = Q2K2E67T5B;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MGTVRE/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.myxj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "match Development com.meitu.*";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64DC7908233212C900E3AB05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MGTVRE/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = YES;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = YES;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = com.meitu.myxj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64DC78A0233212C900E3AB05 /* Build configuration list for PBXProject "MGTVRE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DC7901233212C900E3AB05 /* Debug */,
+				64DC7902233212C900E3AB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DC7903233212C900E3AB05 /* Build configuration list for PBXNativeTarget "MGTVREDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DC7904233212C900E3AB05 /* Debug */,
+				64DC7905233212C900E3AB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64DC7906233212C900E3AB05 /* Build configuration list for PBXNativeTarget "MGTVRE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64DC7907233212C900E3AB05 /* Debug */,
+				64DC7908233212C900E3AB05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64DC789D233212C900E3AB05 /* Project object */;
+}
